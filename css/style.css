@@ -1,0 +1,155 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at 65% 35%, #5E636E 0%, #383B43 45%, #1D1F24 100%);
+    color: #FAF8F5;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+/* Background Bone Artwork */
+.bg-bone-canvas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Crystal-Clear Frosted Glass Dock (Bening seperti foto kedua) */
+.glass-dock {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(18, 19, 22, 0.18) 100%);
+    backdrop-filter: blur(8px) saturate(135%);
+    -webkit-backdrop-filter: blur(8px) saturate(135%);
+    border: 1.5px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 28px 60px -12px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.65);
+}
+
+/* Menu Item Hover & Active */
+.dock-item {
+    border: 1px solid transparent;
+    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dock-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.dock-item.active {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Main Stage Crystal-Clear Glass Panel (Bening seperti foto kedua) */
+.glass-stage {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(18, 19, 22, 0.16) 100%);
+    backdrop-filter: blur(7px) saturate(130%);
+    -webkit-backdrop-filter: blur(7px) saturate(130%);
+    border: 1.5px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 26px 55px -12px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Content Cards */
+.clean-card {
+    background: rgba(15, 16, 19, 0.16);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.clean-card:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.65);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.4);
+}
+
+/* Crisp text shadow agar tetap mudah dibaca di atas kaca bening */
+.glass-dock h2, .glass-stage h1, .glass-stage h2, .glass-stage h3, .glass-stage h4 {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+}
+.glass-dock span, .glass-stage p, .glass-stage span {
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+/* Horizontal 3D Spinning Bone Illustration (Pure CSS + SVG, No Image File) */
+.bone-spin-stage {
+    perspective: 420px;
+    overflow: hidden;
+}
+
+.bone-spinner {
+    transform-style: preserve-3d;
+    animation: spinHorizontal3D 5.5s linear infinite;
+    will-change: transform;
+}
+
+.bone-spin-stage:hover .bone-spinner {
+    animation-duration: 2.2s;
+}
+
+@keyframes spinHorizontal3D {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* View Transition */
+.view-panel {
+    animation: panelFade 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes panelFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Interactive SVG Bones */
+.bone-part {
+    cursor: pointer;
+    transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.bone-part:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.75));
+}
+
+.bone-dimmed {
+    opacity: 0.2 !important;
+}
+
+/* Hide scrollbars cleanly */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Mobile Sidebar Open State */
+#sidebarDock.mobile-open {
+    transform: translateX(0);
+}

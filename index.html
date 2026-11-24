@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia Biologi: Rangka Manusia — Kelompok Anak Sholeh</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        charcoal: '#141518',
+                        slateDark: '#1F2126',
+                        ivory: '#FAF8F5',
+                        boneAccent: '#E6D5B8',
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-center p-3 sm:p-6 lg:p-8 relative">
+
+    <!-- HIGH-CONTRAST 3D SCULPTED & LINE-ART SKELETAL BACKGROUND -->
+    <div class="bg-bone-canvas">
+        <svg viewBox="0 0 1440 900" class="w-full h-full object-cover select-none" preserveAspectRatio="xMidYMid slice" fill="none">
+            <defs>
+                <linearGradient id="boneSculpt3D" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.72" />
+                    <stop offset="40%" stop-color="#E6D5B8" stop-opacity="0.38" />
+                    <stop offset="80%" stop-color="#6B7280" stop-opacity="0.18" />
+                    <stop offset="100%" stop-color="#111827" stop-opacity="0.05" />
+                </linearGradient>
+                <linearGradient id="boneRimLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+                    <stop offset="50%" stop-color="#FDE68A" stop-opacity="0.55" />
+                    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.15" />
+                </linearGradient>
+                <radialGradient id="ambientBoneGlow" cx="50%" cy="45%" r="55%">
+                    <stop offset="0%" stop-color="#F5F5F4" stop-opacity="0.22" />
+                    <stop offset="60%" stop-color="#9CA3AF" stop-opacity="0.08" />
+                    <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+                </radialGradient>
+            </defs>
+
+            <rect width="1440" height="900" fill="url(#ambientBoneGlow)" />
+
+            <!-- LEFT-CENTER ANATOMICAL RIBCAGE & SPINE -->
+            <g transform="translate(210, 440)" opacity="0.88">
+                <rect x="-14" y="-290" width="28" height="44" rx="10" fill="url(#boneSculpt3D)" stroke="url(#boneRimLight)" stroke-width="2" />
+                <rect x="-16" y="-235" width="32" height="46" rx="10" fill="url(#boneSculpt3D)" stroke="url(#boneRimLight)" stroke-width="2" />
+                <rect x="-18" y="-178" width="36" height="48" rx="10" fill="url(#boneSculpt3D)" stroke="url(#boneRimLight)" stroke-width="2" />
+                <rect x="-20" y="-118" width="40" height="50" rx="10" fill="url(#boneSculpt3D)" stroke="url(#boneRimLight)" stroke-width="2" />
+                <rect x="-22" y="-56" width="44" height="52" rx="10" fill="url(#boneSculpt3D)" stroke="url(#boneRimLight)" stroke-width="2" />
+                <rect x="-24" y="8" width="48" height="54" rx="10" fill="url(#boneSculpt3D)" stroke="url(#boneRimLight)" stroke-width="2" />
+                <rect x="-22" y="74" width="44" height="50" rx="10" fill="url(#boneSculpt3D)" stroke="url(#boneRimLight)" stroke-width="2" />
+
+                <path d="M-24 -255 C-190 -245, -245 -110, -90 -35" stroke="url(#boneRimLight)" stroke-width="14" stroke-linecap="round" />
+                <path d="M24 -255 C190 -245, 245 -110, 90 -35" stroke="url(#boneRimLight)" stroke-width="14" stroke-linecap="round" />
+
+                <path d="M-28 -195 C-225 -180, -275 -25, -105 55" stroke="url(#boneRimLight)" stroke-width="15" stroke-linecap="round" />
+                <path d="M28 -195 C225 -180, 275 -25, 105 55" stroke="url(#boneRimLight)" stroke-width="15" stroke-linecap="round" />
+
+                <path d="M-30 -130 C-235 -110, -270 55, -95 135" stroke="url(#boneRimLight)" stroke-width="14" stroke-linecap="round" />
+                <path d="M30 -130 C235 -110, 270 55, 95 135" stroke="url(#boneRimLight)" stroke-width="14" stroke-linecap="round" />
+
+                <path d="M-28 -65 C-210 -40, -230 120, -80 195" stroke="url(#boneRimLight)" stroke-width="12" stroke-linecap="round" />
+                <path d="M28 -65 C210 -40, 230 120, 80 195" stroke="url(#boneRimLight)" stroke-width="12" stroke-linecap="round" />
+            </g>
+
+            <!-- RIGHT-SIDE LARGE 3D SCULPTED FEMUR -->
+            <g transform="translate(1060, 450) rotate(-28) translate(-470, -450)" opacity="0.92">
+                <path
+                    d="M385 110 C340 110, 315 155, 345 192 C370 222, 405 242, 418 290 L430 615 C418 662, 370 680, 345 710 C315 748, 345 795, 395 790 C432 785, 448 758, 470 758 C492 758, 508 785, 545 790 C595 795, 625 748, 595 710 C570 680, 522 662, 510 615 L522 290 C535 242, 570 222, 595 192 C625 155, 600 110, 555 110 C518 110, 498 138, 470 138 C442 138, 422 110, 385 110 Z"
+                    fill="url(#boneSculpt3D)"
+                    stroke="url(#boneRimLight)"
+                    stroke-width="3.5"
+                />
+                <path d="M456 260 L456 640 M484 260 L484 640" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="8 8" />
+                <ellipse cx="470" cy="168" rx="68" ry="26" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2" />
+                <ellipse cx="470" cy="735" rx="74" ry="28" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2" />
+            </g>
+
+            <circle cx="720" cy="450" r="340" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5" />
+            <circle cx="720" cy="450" r="460" stroke="#E6D5B8" stroke-opacity="0.12" stroke-width="1.2" stroke-dasharray="10 10" />
+        </svg>
+    </div>
+
+    <!-- MOBILE TOP BAR (Hanya muncul di layar kecil < lg) -->
+    <header class="lg:hidden relative z-20 flex items-center justify-between px-4 py-3 rounded-2xl glass-dock mb-3">
+        <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-full bg-white text-[#141518] flex items-center justify-center shadow">
+                <i class="fa-solid fa-bone text-sm"></i>
+            </div>
+            <div>
+                <p class="font-display font-bold text-sm text-white leading-none">Rangka Manusia</p>
+                <span class="text-[11px] text-neutral-300">Kelompok Anak Sholeh</span>
+            </div>
+        </div>
+        <button
+            id="mobileMenuBtn"
+            onclick="toggleMobileMenu()"
+            aria-label="Buka Menu"
+            class="w-10 h-10 rounded-xl bg-white/15 border border-white/30 text-white flex items-center justify-center active:scale-95 transition"
+        >
+            <i id="mobileMenuIcon" class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- MOBILE BACKDROP OVERLAY -->
+    <div
+        id="mobileBackdrop"
+        onclick="closeMobileMenu()"
+        class="fixed inset-0 z-30 bg-black/65 backdrop-blur-xs hidden lg:hidden"
+    ></div>
+
+    <!-- MAIN APP WORKSPACE -->
+    <div class="relative z-20 w-full max-w-[1340px] flex flex-col lg:flex-row gap-6 items-stretch lg:h-[820px]">
+
+        <!-- LEFT: FLOATING GLASS DOCK -->
+        <aside
+            id="sidebarDock"
+            class="fixed lg:static top-3 bottom-3 left-3 z-40 w-[285px] lg:w-[295px] flex-shrink-0 rounded-[26px] glass-dock text-white flex flex-col justify-between p-5 select-none -translate-x-[115%] lg:translate-x-0 transition-transform duration-300 ease-out overflow-y-auto no-scrollbar"
+        >
+            <div>
+                <!-- Window Dots -->
+                <div class="flex items-center gap-2 pb-4 border-b border-white/15">
+                    <span class="w-3 h-3 rounded-full bg-[#FF5F56]"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#FFBD2E]"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#27C93F]"></span>
+                    <span class="ml-auto text-[11px] font-medium text-neutral-300">Biologi XI</span>
+                    <button
+                        onclick="closeMobileMenu()"
+                        aria-label="Tutup Menu"
+                        class="lg:hidden ml-2 w-7 h-7 rounded-lg bg-white/10 text-neutral-200 flex items-center justify-center"
+                    >
+                        <i class="fa-solid fa-xmark text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Profile Section -->
+                <div class="flex items-center gap-3.5 py-4 border-b border-white/15">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-neutral-400 to-white p-0.5 flex-shrink-0 shadow-md">
+                        <div class="w-full h-full rounded-full bg-[#1C1D20] flex items-center justify-center text-white">
+                            <i class="fa-solid fa-bone text-lg"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="font-display font-bold text-[17px] text-white leading-tight">Anak Sholeh</h2>
+                        <p class="text-xs text-neutral-300 mt-0.5">Materi Rangka Manusia</p>
+                    </div>
+                </div>
+
+                <!-- MENU Label -->
+                <p class="text-[11px] font-semibold text-neutral-300 tracking-widest uppercase mt-4 mb-2.5 px-2">MENU</p>
+
+                <!-- Interactive Menu List -->
+                <nav class="space-y-1.5">
+                    <button onclick="switchView('start', this)" class="dock-item active w-full flex items-center gap-3.5 px-3.5 py-2.5 rounded-xl text-[13px] font-semibold text-ivory text-left">
+                        <i class="fa-solid fa-play w-4 text-center text-ivory"></i>
+                        <span>Start & Rangka 2D</span>
+                    </button>
+
+                    <button onclick="switchView('pengantar', this)" class="dock-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-[13px] font-medium text-neutral-200 text-left">
+                        <span class="flex items-center gap-3.5">
+                            <i class="fa-regular fa-compass w-4 text-center text-neutral-200"></i>
+                            <span>Sistem Gerak</span>
+                        </span>
+                        <span class="w-5 h-5 rounded-full bg-ivory text-[#141518] text-[11px] font-bold flex items-center justify-center shadow-sm">4</span>
+                    </button>
+
+                    <button onclick="switchView('fungsi', this)" class="dock-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-[13px] font-medium text-neutral-200 text-left">
+                        <span class="flex items-center gap-3.5">
+                            <i class="fa-regular fa-heart w-4 text-center text-neutral-200"></i>
+                            <span>Fungsi Rangka</span>
+                        </span>
+                        <span class="w-5 h-5 rounded-full bg-white/15 text-ivory text-[11px] font-bold flex items-center justify-center">5</span>
+                    </button>
+
+                    <button onclick="switchView('klasifikasi', this)" class="dock-item w-full flex items-center gap-3.5 px-3.5 py-2.5 rounded-xl text-[13px] font-medium text-neutral-200 text-left">
+                        <i class="fa-solid fa-person-rays w-4 text-center text-neutral-200"></i>
+                        <span>Aksial & Apendikular</span>
+                    </button>
+
+                    <button onclick="switchView('jaringan', this)" class="dock-item w-full flex items-center gap-3.5 px-3.5 py-2.5 rounded-xl text-[13px] font-medium text-neutral-200 text-left">
+                        <i class="fa-solid fa-microscope w-4 text-center text-neutral-200"></i>
+                        <span>Jenis & Bentuk Tulang</span>
+                    </button>
+
+                    <button onclick="switchView('osifikasi', this)" class="dock-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-[13px] font-medium text-neutral-200 text-left">
+                        <span class="flex items-center gap-3.5">
+                            <i class="fa-solid fa-link w-4 text-center text-neutral-200"></i>
+                            <span>Osifikasi & Sendi</span>
+                        </span>
+                        <span class="w-5 h-5 rounded-full bg-ivory text-[#141518] text-[11px] font-bold flex items-center justify-center shadow-sm">6</span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Bottom Section: NOTICE / KUIS Banner Card + Kesimpulan -->
+            <div class="mt-5 space-y-3">
+                <div onclick="openQuizModal(); closeMobileMenu();" class="cursor-pointer group relative rounded-2xl overflow-hidden bg-gradient-to-r from-[#F5F5F4] via-[#E7E5E4] to-[#D6D3D1] p-3.5 border border-white/80 shadow-lg transition hover:scale-[1.02]">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] font-bold text-neutral-600 uppercase tracking-widest block">MULTIMEDIA BIOLOGI</span>
+                            <span class="font-display font-extrabold text-xl text-[#18191B] tracking-tight block leading-none mt-1">NOTICE</span>
+                            <span class="text-[11px] text-neutral-700 font-medium block mt-1">Uji Pemahaman (5 Soal)</span>
+                        </div>
+                        <div class="w-11 h-11 rounded-xl bg-[#18191B] text-amber-300 flex items-center justify-center shadow-md group-hover:scale-105 transition">
+                            <i class="fa-solid fa-bone text-base"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-1 border-t border-white/15">
+                    <button onclick="switchView('kesimpulan', this)" class="dock-item w-full flex items-center gap-3.5 px-3.5 py-2.5 rounded-xl text-[13px] font-medium text-neutral-200 hover:text-white text-left">
+                        <i class="fa-solid fa-flag-checkered w-4 text-center text-neutral-200"></i>
+                        <span>Kesimpulan</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- RIGHT: MAIN CONTENT VIEWPORT -->
+        <main class="flex-1 rounded-[26px] glass-stage p-5 sm:p-8 lg:p-10 flex flex-col justify-between overflow-y-auto no-scrollbar">
+
+            <!-- Top Header Info Bar -->
+            <div class="flex items-center justify-between gap-2 pb-3 mb-4 border-b border-white/15">
+                <span class="text-[11px] font-semibold tracking-wider uppercase text-neutral-200">
+                    <i class="fa-solid fa-rotate text-amber-300 mr-1.5"></i>Ilustrasi Tulang Berputar Horizontal (Tanpa Gambar)
+                </span>
+                <span class="text-[11px] text-neutral-300 hidden sm:inline">Klik kartu atau tulang untuk detail</span>
+            </div>
+
+            <!-- =====================================================================
+                 VIEW 1: START & INTERACTIVE 2D SKELETON VIEWER
+            ====================================================================== -->
+            <div id="view-start" class="view-panel h-full flex flex-col justify-between gap-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+
+                    <!-- Left Editorial Intro (6 cols) -->
+                    <div class="lg:col-span-6 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-neutral-200 text-xs font-semibold">
+                            <span class="w-2 h-2 rounded-full bg-amber-300"></span>
+                            Multimedia Biologi • Rangka Manusia
+                        </div>
+
+                        <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-[1.12]">
+                            Sistem Gerak & <br><span class="text-neutral-300">Rangka Manusia</span>
+                        </h1>
+
+                        <p class="text-sm sm:text-[15px] text-neutral-200 leading-relaxed">
+                            Jelajahi struktur <strong class="text-white">endoskeleton</strong> manusia secara interaktif. Klik bagian tulang pada diagram di samping untuk melihat klasifikasi dan fungsinya, atau pilih bab pada menu.
+                        </p>
+
+                        <!-- Quick Stats Pills -->
+                        <div class="grid grid-cols-3 gap-3 pt-1">
+                            <div class="p-3.5 rounded-2xl bg-white/5 border border-white/15">
+                                <span class="text-xl font-extrabold text-white block">2</span>
+                                <span class="text-[11px] text-neutral-300 font-medium">Kelompok Rangka</span>
+                            </div>
+                            <div class="p-3.5 rounded-2xl bg-white/5 border border-white/15">
+                                <span class="text-xl font-extrabold text-amber-300 block">33</span>
+                                <span class="text-[11px] text-neutral-300 font-medium">Ruas Tulang Belakang</span>
+                            </div>
+                            <div class="p-3.5 rounded-2xl bg-white/5 border border-white/15">
+                                <span class="text-xl font-extrabold text-white block">6</span>
+                                <span class="text-[11px] text-neutral-300 font-medium">Jenis Sendi Gerak</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-1 flex flex-wrap gap-3">
+                            <button onclick="triggerNavClick(1)" class="px-6 py-3 rounded-xl bg-white hover:bg-neutral-200 text-[#18191B] text-xs sm:text-sm font-bold transition shadow-lg flex items-center gap-2">
+                                <span>Mulai Belajar</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                            <button onclick="openQuizModal()" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 border border-white/25 text-white text-xs sm:text-sm font-semibold transition">
+                                Latihan Kuis
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Interactive 2D Skeleton Card + Horizontal Rotating Bone Preview (6 cols) -->
+                    <div class="lg:col-span-6 flex justify-center">
+                        <div class="w-full max-w-[400px] rounded-[26px] bg-black/25 backdrop-blur-md border border-white/35 p-5 shadow-2xl flex flex-col justify-between gap-3">
+
+                            <!-- Top Filter Pills -->
+                            <div class="flex flex-wrap items-center justify-center gap-1.5">
+                                <button onclick="setSkeletonFilter('all')" id="filterAllBtn" class="px-4 py-1.5 rounded-full bg-white text-[#18191B] text-xs font-bold transition">
+                                    Semua
+                                </button>
+                                <button onclick="setSkeletonFilter('axial')" id="filterAxialBtn" class="px-3.5 py-1.5 rounded-full bg-transparent border border-white/25 text-neutral-200 hover:text-white text-xs font-medium transition">
+                                    Rangka aksial
+                                </button>
+                                <button onclick="setSkeletonFilter('appendicular')" id="filterAppBtn" class="px-3.5 py-1.5 rounded-full bg-transparent border border-white/25 text-neutral-200 hover:text-white text-xs font-medium transition">
+                                    Rangka apendikular
+                                </button>
+                            </div>
+
+                            <!-- Vector Skeleton Diagram -->
+                            <div class="my-1 flex items-center justify-center">
+                                <svg id="heroSkeletonSvg" viewBox="0 0 320 340" class="w-full max-w-[220px] h-auto select-none">
+                                    <!-- AXIAL -->
+                                    <g id="part-skull" onclick="selectBonePart('skull')" class="bone-part" data-group="axial">
+                                        <path d="M135 45 C135 20, 185 20, 185 45 C185 58, 179 65, 175 68 L175 78 L145 78 L145 68 C141 65, 135 58, 135 45 Z" fill="#16171A" stroke="#F3F4F6" stroke-width="2.5" stroke-linejoin="round" />
+                                        <circle cx="152" cy="50" r="4.5" fill="#F3F4F6" />
+                                        <circle cx="168" cy="50" r="4.5" fill="#F3F4F6" />
+                                    </g>
+                                    <g id="part-spine" onclick="selectBonePart('spine')" class="bone-part" data-group="axial">
+                                        <line x1="160" y1="78" x2="160" y2="200" stroke="#F3F4F6" stroke-width="5" stroke-linecap="round" />
+                                        <line x1="156" y1="155" x2="164" y2="155" stroke="#16171A" stroke-width="1.5" />
+                                        <line x1="156" y1="165" x2="164" y2="165" stroke="#16171A" stroke-width="1.5" />
+                                        <line x1="156" y1="175" x2="164" y2="175" stroke="#16171A" stroke-width="1.5" />
+                                        <line x1="156" y1="185" x2="164" y2="185" stroke="#16171A" stroke-width="1.5" />
+                                    </g>
+                                    <g id="part-ribcage" onclick="selectBonePart('ribcage')" class="bone-part" data-group="axial">
+                                        <path d="M160 95 C120 95, 112 150, 155 152" fill="none" stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" />
+                                        <path d="M160 95 C200 95, 208 150, 165 152" fill="none" stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" />
+                                        <path d="M153 106 C132 108, 128 126, 134 136" fill="none" stroke="#F3F4F6" stroke-width="3.5" stroke-linecap="round" />
+                                        <path d="M167 106 C188 108, 192 126, 186 136" fill="none" stroke="#F3F4F6" stroke-width="3.5" stroke-linecap="round" />
+                                        <polygon points="156,94 164,94 166,138 160,150 154,138" fill="#16171A" stroke="#F3F4F6" stroke-width="2.2" stroke-linejoin="round" />
+                                    </g>
+
+                                    <!-- APPENDICULAR -->
+                                    <g id="part-shoulder" onclick="selectBonePart('shoulder')" class="bone-part" data-group="appendicular">
+                                        <path d="M122 90 Q160 85 198 90" fill="none" stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" />
+                                        <path d="M122 90 L118 114" fill="none" stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" />
+                                        <path d="M198 90 L202 114" fill="none" stroke="#F3F4F6" stroke-width="4" stroke-linecap="round" />
+                                    </g>
+                                    <g id="part-arms" onclick="selectBonePart('arms')" class="bone-part" data-group="appendicular">
+                                        <line x1="115" y1="94" x2="94" y2="192" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round" />
+                                        <line x1="91" y1="199" x2="86" y2="218" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" />
+                                        <line x1="96" y1="199" x2="95" y2="221" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" />
+                                        <line x1="101" y1="199" x2="104" y2="218" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" />
+                                        <line x1="205" y1="94" x2="226" y2="192" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round" />
+                                        <line x1="219" y1="199" x2="216" y2="218" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" />
+                                        <line x1="224" y1="199" x2="225" y2="221" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" />
+                                        <line x1="229" y1="199" x2="234" y2="218" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" />
+                                    </g>
+                                    <g id="part-pelvis" onclick="selectBonePart('pelvis')" class="bone-part" data-group="appendicular">
+                                        <path d="M128 200 L138 210 L182 210 L192 200 L202 210 L204 224 L184 230 L176 220 L144 220 L136 230 L116 224 L118 210 Z" fill="#16171A" stroke="#F3F4F6" stroke-width="2.2" stroke-linejoin="round" />
+                                    </g>
+                                    <g id="part-legs" onclick="selectBonePart('legs')" class="bone-part" data-group="appendicular">
+                                        <line x1="138" y1="230" x2="132" y2="320" stroke="#F3F4F6" stroke-width="5" stroke-linecap="round" />
+                                        <rect x="122" y="325" width="16" height="5" rx="2.5" fill="#F3F4F6" />
+                                        <line x1="182" y1="230" x2="188" y2="320" stroke="#F3F4F6" stroke-width="5" stroke-linecap="round" />
+                                        <rect x="182" y="325" width="16" height="5" rx="2.5" fill="#F3F4F6" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <!-- Bottom Info Box with Horizontal Spinning Bone SVG -->
+                            <div class="rounded-2xl bg-white/10 backdrop-blur-xs border border-white/25 p-3.5 flex items-center gap-3">
+                                <div class="bone-spin-stage w-14 h-14 rounded-xl bg-black/35 border border-white/20 flex items-center justify-center flex-shrink-0">
+                                    <div id="heroBoneSpinner" class="bone-spinner w-11 h-11 flex items-center justify-center"></div>
+                                </div>
+                                <div class="min-w-0">
+                                    <h3 id="boneCardTitle" class="text-sm font-bold text-white truncate">Anggota gerak atas</h3>
+                                    <p id="boneCardDesc" class="text-xs text-neutral-200 mt-0.5 leading-snug">
+                                        Apendikular. Lengan atas, pengumpil, hasta, pergelangan tangan, telapak dan jari tangan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =====================================================================
+                 VIEW 2: TUJUAN PEMBELAJARAN & A. DEFINISI
+            ====================================================================== -->
+            <div id="view-pengantar" class="view-panel hidden h-full flex flex-col justify-between gap-5">
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Bab 01 • Pengantar</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Tujuan Pembelajaran & Definisi</h2>
+                    </div>
+                    <div class="bone-spin-stage w-14 h-14 rounded-2xl bg-white/10 border border-white/25 flex items-center justify-center flex-shrink-0">
+                        <div class="bone-spinner" data-bone-type="spine"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="clean-card p-4 sm:p-5 flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-white text-[#18191B] text-xs font-bold flex items-center justify-center flex-shrink-0">01</span>
+                        <div>
+                            <h3 class="text-sm font-bold text-white">Menganalisis fungsi rangka</h3>
+                            <p class="text-xs text-neutral-200 mt-1 leading-relaxed">Peserta didik mampu menjelaskan fungsi utama kerangka manusia.</p>
+                        </div>
+                    </div>
+                    <div class="clean-card p-4 sm:p-5 flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-white/15 text-white border border-white/25 text-xs font-bold flex items-center justify-center flex-shrink-0">02</span>
+                        <div>
+                            <h3 class="text-sm font-bold text-white">Membedakan jenis tulang</h3>
+                            <p class="text-xs text-neutral-200 mt-1 leading-relaxed">Peserta didik mampu mengklasifikasikan tulang berdasarkan penyusun dan bentuknya.</p>
+                        </div>
+                    </div>
+                    <div class="clean-card p-4 sm:p-5 flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-white/15 text-white border border-white/25 text-xs font-bold flex items-center justify-center flex-shrink-0">03</span>
+                        <div>
+                            <h3 class="text-sm font-bold text-white">Mengidentifikasi pembagian rangka tubuh</h3>
+                            <p class="text-xs text-neutral-200 mt-1 leading-relaxed">Peserta didik mampu mengelompokkan rangka aksial dan apendikular lewat media anatomi.</p>
+                        </div>
+                    </div>
+                    <div class="clean-card p-4 sm:p-5 flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-white text-[#18191B] text-xs font-bold flex items-center justify-center flex-shrink-0">04</span>
+                        <div>
+                            <h3 class="text-sm font-bold text-white">Menjelaskan proses osifikasi</h3>
+                            <p class="text-xs text-neutral-200 mt-1 leading-relaxed">Peserta didik mampu mendeskripsikan tahapan osifikasi (tulang rawan ke keras).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clean-card p-5 sm:p-6">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                        <h3 class="text-base font-bold text-white">A. Definisi & 5 Poin Kunci Sistem Gerak</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <button onclick="selectKeyPoint(0)" class="kp-btn px-3 py-1 rounded-lg bg-white text-[#18191B] text-xs font-semibold">1. Sistem Gerak</button>
+                            <button onclick="selectKeyPoint(1)" class="kp-btn px-3 py-1 rounded-lg bg-white/10 text-neutral-200 text-xs font-semibold">2. Gerak Aktif</button>
+                            <button onclick="selectKeyPoint(2)" class="kp-btn px-3 py-1 rounded-lg bg-white/10 text-neutral-200 text-xs font-semibold">3. Gerak Pasif</button>
+                            <button onclick="selectKeyPoint(3)" class="kp-btn px-3 py-1 rounded-lg bg-white/10 text-neutral-200 text-xs font-semibold">4. Penyusun</button>
+                            <button onclick="selectKeyPoint(4)" class="kp-btn px-3 py-1 rounded-lg bg-white/10 text-neutral-200 text-xs font-semibold">5. Pelindung</button>
+                        </div>
+                    </div>
+                    <div id="kpSpotlight" class="p-4 rounded-2xl bg-black/30 border border-white/15 text-sm text-neutral-200 leading-relaxed"></div>
+                </div>
+
+                <div class="flex justify-between items-center pt-2">
+                    <button onclick="triggerNavClick(0)" class="text-xs font-semibold text-neutral-300 hover:text-white"><i class="fa-solid fa-arrow-left mr-1"></i> Kembali</button>
+                    <button onclick="triggerNavClick(2)" class="px-5 py-2.5 rounded-xl bg-white text-[#18191B] text-xs font-bold hover:bg-neutral-200 transition">Lanjut: Fungsi Rangka <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                </div>
+            </div>
+
+            <!-- =====================================================================
+                 VIEW 3: B. FUNGSI RANGKA
+            ====================================================================== -->
+            <div id="view-fungsi" class="view-panel hidden h-full flex flex-col justify-between gap-5">
+                <div>
+                    <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Bab 02 • Peran Fisiologis</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">B. Fungsi Rangka Manusia</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-auto">
+                    <div class="clean-card p-5 space-y-2.5">
+                        <div class="flex items-center justify-between">
+                            <div class="w-10 h-10 rounded-xl bg-white/10 text-white flex items-center justify-center"><i class="fa-solid fa-person"></i></div>
+                            <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                <div class="bone-spinner" data-bone-type="spine"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white">1. Menegakkan & Memberi Bentuk</h3>
+                        <p class="text-xs sm:text-sm text-neutral-200 leading-relaxed">Menahan dan menegakkan tubuh serta memberi bentuk proporsional pada tubuh manusia.</p>
+                    </div>
+
+                    <div class="clean-card p-5 space-y-2.5">
+                        <div class="flex items-center justify-between">
+                            <div class="w-10 h-10 rounded-xl bg-white/10 text-amber-300 flex items-center justify-center"><i class="fa-solid fa-dumbbell"></i></div>
+                            <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                <div class="bone-spinner" data-bone-type="femur"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white">2. Tempat Melekatnya Otot</h3>
+                        <p class="text-xs sm:text-sm text-neutral-200 leading-relaxed">Menjadi tempat melekatnya otot rangka sehingga kontraksi otot menghasilkan gerakan.</p>
+                    </div>
+
+                    <div class="clean-card p-5 space-y-2.5">
+                        <div class="flex items-center justify-between">
+                            <div class="w-10 h-10 rounded-xl bg-white/10 text-white flex items-center justify-center"><i class="fa-solid fa-shield-heart"></i></div>
+                            <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                <div class="bone-spinner" data-bone-type="skull"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white">3. Melindungi Organ Vital</h3>
+                        <p class="text-xs sm:text-sm text-neutral-200 leading-relaxed">Melindungi organ lunak dan vital seperti <strong class="text-white">otak, jantung, dan paru-paru</strong>.</p>
+                    </div>
+
+                    <div class="clean-card p-5 space-y-2.5">
+                        <div class="flex items-center justify-between">
+                            <div class="w-10 h-10 rounded-xl bg-white/10 text-amber-300 flex items-center justify-center"><i class="fa-solid fa-droplet"></i></div>
+                            <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                <div class="bone-spinner" data-bone-type="pelvis"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white">4. Pembentukan Sel Darah</h3>
+                        <p class="text-xs sm:text-sm text-neutral-200 leading-relaxed">Berlangsung di dalam <strong class="text-white">sumsum tulang</strong> untuk memproduksi sel darah merah, putih, dan keping darah.</p>
+                    </div>
+
+                    <div class="clean-card p-5 space-y-2.5 md:col-span-2 bg-white/[0.07]">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-white text-[#18191B] flex items-center justify-center"><i class="fa-solid fa-gem"></i></div>
+                                <h3 class="text-base font-bold text-white">5. Menyimpan Cadangan Mineral</h3>
+                            </div>
+                            <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                <div class="bone-spinner" data-bone-type="ribcage"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs sm:text-sm text-neutral-200 leading-relaxed">Matriks tulang menyimpan cadangan mineral penting bagi metabolisme tubuh, terutama <strong class="text-white">kalsium</strong> dan <strong class="text-white">fosfor</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center pt-2">
+                    <button onclick="triggerNavClick(1)" class="text-xs font-semibold text-neutral-300 hover:text-white"><i class="fa-solid fa-arrow-left mr-1"></i> Sebelumnya</button>
+                    <button onclick="triggerNavClick(3)" class="px-5 py-2.5 rounded-xl bg-white text-[#18191B] text-xs font-bold hover:bg-neutral-200 transition">Lanjut: Aksial & Apendikular <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                </div>
+            </div>
+
+            <!-- =====================================================================
+                 VIEW 4: C. JENIS RANGKA (AKSIAL & APENDIKULAR)
+            ====================================================================== -->
+            <div id="view-klasifikasi" class="view-panel hidden h-full flex flex-col justify-between gap-5">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div>
+                        <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Bab 03 • Pembagian Rangka</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">C. Jenis Rangka Tubuh</h2>
+                    </div>
+
+                    <div class="inline-flex p-1 rounded-xl bg-black/30 border border-white/15 self-start">
+                        <button id="tabAxialBtn" onclick="switchSkeletonTab('axial')" class="px-4 py-2 rounded-lg bg-white text-[#18191B] text-xs font-bold transition">1. Rangka Aksial</button>
+                        <button id="tabAppendicularBtn" onclick="switchSkeletonTab('appendicular')" class="px-4 py-2 rounded-lg text-neutral-200 text-xs font-bold transition">2. Rangka Apendikular</button>
+                    </div>
+                </div>
+
+                <!-- Axial Panel -->
+                <div id="panelAxial" class="space-y-4 my-auto">
+                    <p class="text-xs sm:text-sm text-neutral-200 bg-white/5 p-4 rounded-2xl border border-white/15">
+                        <strong class="text-white">Rangka Aksial</strong> adalah rangka yang membentuk <strong class="text-white">sumbu utama tubuh</strong>. Meliputi: Tengkorak, Tulang belakang, Tulang rusuk, dan Tulang dada.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="clean-card p-5 space-y-2.5">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-base font-bold text-white">Tulang Tengkorak</h3>
+                                <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="skull"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-neutral-200 leading-relaxed">Melindungi otak dan membentuk struktur wajah. Tulang tengkorak bagian kepala <strong class="text-white">tidak dapat digerakkan</strong>.</p>
+                        </div>
+                        <div class="clean-card p-5 space-y-2.5">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-base font-bold text-white">Tulang Belakang</h3>
+                                <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="spine"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-neutral-200 leading-relaxed">Menyangga kepala dan tubuh, menjaga kestabilan, tempat melekat rusuk, dan terdiri atas <strong class="text-white">33 ruas</strong>.</p>
+                        </div>
+                        <div class="clean-card p-5 space-y-2.5">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-base font-bold text-white">Tulang Dada & Rusuk</h3>
+                                <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="ribcage"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-neutral-200 leading-relaxed">Melindungi organ dalam. Terdiri dari <strong class="text-white">7 pasang rusuk sejati, 3 palsu, dan 2 melayang</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-amber-400/10 border border-amber-300/30 text-xs text-neutral-200">
+                        <strong class="text-amber-300">Catatan:</strong> Rusuk sejati melekat langsung pada tulang dada; rusuk palsu menempel pada rusuk di atasnya; rusuk melayang ujung depannya tidak melekat pada tulang manapun.
+                    </div>
+                </div>
+
+                <!-- Appendicular Panel -->
+                <div id="panelAppendicular" class="hidden space-y-4 my-auto">
+                    <p class="text-xs sm:text-sm text-neutral-200 bg-white/5 p-4 rounded-2xl border border-white/15">
+                        <strong class="text-white">Rangka Apendikular</strong> adalah rangka yang menyusun <strong class="text-white">anggota gerak beserta penghubungnya dengan tubuh</strong>.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="clean-card p-5 space-y-2.5">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-base font-bold text-white">Tulang Gelang Bahu</h3>
+                                <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="ribcage"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-neutral-200 leading-relaxed">Terdiri atas <strong class="text-white">tulang belikat</strong> dan <strong class="text-white">tulang selangka</strong>. Menghubungkan anggota gerak atas dengan rangka tubuh.</p>
+                        </div>
+                        <div class="clean-card p-5 space-y-2.5">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-base font-bold text-white">Tulang Gelang Panggul</h3>
+                                <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="pelvis"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-neutral-200 leading-relaxed">Tersusun atas <strong class="text-white">tulang pinggul, tulang duduk, dan tulang kemaluan</strong> untuk menopang tubuh.</p>
+                        </div>
+                        <div class="clean-card p-5 space-y-2.5">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-base font-bold text-white">Tulang Anggota Gerak</h3>
+                                <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="femur"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-neutral-200 leading-relaxed"><strong class="text-white">Atas:</strong> lengan atas, pengumpil, hasta, tangan. <strong class="text-white">Bawah:</strong> paha, tempurung lutut, kering, betis, kaki.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center pt-2">
+                    <button onclick="triggerNavClick(2)" class="text-xs font-semibold text-neutral-300 hover:text-white"><i class="fa-solid fa-arrow-left mr-1"></i> Sebelumnya</button>
+                    <button onclick="triggerNavClick(4)" class="px-5 py-2.5 rounded-xl bg-white text-[#18191B] text-xs font-bold hover:bg-neutral-200 transition">Lanjut: Jenis & Bentuk Tulang <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                </div>
+            </div>
+
+            <!-- =====================================================================
+                 VIEW 5: D. JENIS TULANG & E. BENTUK TULANG
+            ====================================================================== -->
+            <div id="view-jaringan" class="view-panel hidden h-full flex flex-col justify-between gap-5">
+                <div>
+                    <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Bab 04 • Jaringan & Morfologi</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">D. Jenis Tulang & E. Bentuk Tulang</h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="clean-card p-5 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-amber-300 text-[11px] font-bold">KARTILAGO • KONDROSIT</span>
+                            <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                <div class="bone-spinner" data-bone-type="short"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white">Tulang Rawan (Lentur)</h3>
+                        <p class="text-xs text-neutral-200 leading-relaxed">Mengandung sedikit zat kapur. Dibagi menjadi 3: <strong class="text-white">Hialin</strong> (persendian & trakea), <strong class="text-white">Fibrosa</strong> (ruas tulang belakang & lutut), dan <strong class="text-white">Elastis</strong> (daun telinga & hidung).</p>
+                    </div>
+                    <div class="clean-card p-5 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-0.5 rounded-full bg-white text-[#18191B] text-[11px] font-bold">OSTEON • OSTEOSIT</span>
+                            <div class="bone-spin-stage w-11 h-11 rounded-xl bg-black/30 border border-white/15 flex items-center justify-center">
+                                <div class="bone-spinner" data-bone-type="femur"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-base font-bold text-white">Tulang Keras & Saluran Havers</h3>
+                        <p class="text-xs text-neutral-200 leading-relaxed">Kaya <strong class="text-white">kalsium & fosfor</strong>, tersusun atas sel <strong class="text-white">osteosit</strong>, dan memiliki <strong class="text-white">saluran Havers</strong> berisi pembuluh kapiler untuk mengangkut oksigen serta zat makanan.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-bold text-white mb-3">E. Klasifikasi 4 Bentuk Tulang (Berputar Horizontal)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+                        <div class="clean-card p-4 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold text-amber-300">01 • PIPIH</span>
+                                <div class="bone-spin-stage w-10 h-10 rounded-lg bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="flat"></div>
+                                </div>
+                            </div>
+                            <h4 class="text-sm font-bold text-white">Tulang Pipih</h4>
+                            <p class="text-xs text-neutral-200">Berbentuk tipis. Contoh: rusuk, dada, belikat, tengkorak.</p>
+                        </div>
+                        <div class="clean-card p-4 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold text-amber-300">02 • PENDEK</span>
+                                <div class="bone-spin-stage w-10 h-10 rounded-lg bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="short"></div>
+                                </div>
+                            </div>
+                            <h4 class="text-sm font-bold text-white">Tulang Pendek</h4>
+                            <p class="text-xs text-neutral-200">Berbentuk pendek kokoh. Contoh: pergelangan tangan & kaki.</p>
+                        </div>
+                        <div class="clean-card p-4 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold text-amber-300">03 • PIPA</span>
+                                <div class="bone-spin-stage w-10 h-10 rounded-lg bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="femur"></div>
+                                </div>
+                            </div>
+                            <h4 class="text-sm font-bold text-white">Tulang Pipa</h4>
+                            <p class="text-xs text-neutral-200">Panjang berongga di tengah. Contoh: paha & lengan atas.</p>
+                        </div>
+                        <div class="clean-card p-4 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold text-amber-300">04 • TAK BERBENTUK</span>
+                                <div class="bone-spin-stage w-10 h-10 rounded-lg bg-black/30 border border-white/15 flex items-center justify-center">
+                                    <div class="bone-spinner" data-bone-type="irregular"></div>
+                                </div>
+                            </div>
+                            <h4 class="text-sm font-bold text-white">Tak Berbentuk</h4>
+                            <p class="text-xs text-neutral-200">Bentuk tidak beraturan. Contoh: tulang wajah & belakang.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center pt-2">
+                    <button onclick="triggerNavClick(3)" class="text-xs font-semibold text-neutral-300 hover:text-white"><i class="fa-solid fa-arrow-left mr-1"></i> Sebelumnya</button>
+                    <button onclick="triggerNavClick(5)" class="px-5 py-2.5 rounded-xl bg-white text-[#18191B] text-xs font-bold hover:bg-neutral-200 transition">Lanjut: Osifikasi & Sendi <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                </div>
+            </div>
+
+            <!-- =====================================================================
+                 VIEW 6: F. OSIFIKASI & G. HUBUNGAN ANTARTULANG & SENDI
+            ====================================================================== -->
+            <div id="view-osifikasi" class="view-panel hidden h-full flex flex-col justify-between gap-5">
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Bab 05 • Pertumbuhan & Artikulasi</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">F. Proses Osifikasi & G. Persendian</h2>
+                    </div>
+                    <div class="bone-spin-stage w-14 h-14 rounded-2xl bg-white/10 border border-white/25 flex items-center justify-center flex-shrink-0">
+                        <div class="bone-spinner" data-bone-type="femur"></div>
+                    </div>
+                </div>
+
+                <div class="clean-card p-5 space-y-3">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <h3 class="text-sm font-bold text-white">F. 5 Tahapan Osifikasi (Osteoblas → Osteosit)</h3>
+                        <div class="flex gap-1">
+                            <button onclick="setOssificationStep(0)" class="osi-btn px-2.5 py-1 rounded-lg bg-white text-[#18191B] text-xs font-bold">1</button>
+                            <button onclick="setOssificationStep(1)" class="osi-btn px-2.5 py-1 rounded-lg bg-white/10 text-white text-xs font-bold">2</button>
+                            <button onclick="setOssificationStep(2)" class="osi-btn px-2.5 py-1 rounded-lg bg-white/10 text-white text-xs font-bold">3</button>
+                            <button onclick="setOssificationStep(3)" class="osi-btn px-2.5 py-1 rounded-lg bg-white/10 text-white text-xs font-bold">4</button>
+                            <button onclick="setOssificationStep(4)" class="osi-btn px-2.5 py-1 rounded-lg bg-white/10 text-white text-xs font-bold">5</button>
+                        </div>
+                    </div>
+                    <p id="osiDesc" class="text-xs sm:text-sm text-neutral-200 bg-black/30 p-3.5 rounded-xl border border-white/15 leading-relaxed">
+                        <strong class="text-white">Tahap 1:</strong> Proses penulangan dimulai pada tulang rawan yang mengandung <strong class="text-amber-300">osteoblas</strong> (sel pembentuk tulang muda).
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/15">
+                            <strong class="text-white block">Sinartrosis</strong>
+                            <span class="text-neutral-200">Tidak bergerak (tengkorak).</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/15">
+                            <strong class="text-white block">Amfiartrosis</strong>
+                            <span class="text-neutral-200">Sedikit gerak (tulang belakang).</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white text-[#18191B]">
+                            <strong class="block">Diartrosis (6 Sendi)</strong>
+                            <span class="text-neutral-700">Gerakan bebas & beragam arah.</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+                        <div class="clean-card p-3.5">
+                            <strong class="text-white block">1. Sendi Engsel</strong>
+                            <span class="text-neutral-200">1 arah (siku & lutut).</span>
+                        </div>
+                        <div class="clean-card p-3.5">
+                            <strong class="text-white block">2. Sendi Putar</strong>
+                            <span class="text-neutral-200">1 poros (tulang atlas C1 & tengkorak).</span>
+                        </div>
+                        <div class="clean-card p-3.5">
+                            <strong class="text-white block">3. Sendi Kelana</strong>
+                            <span class="text-neutral-200">2 arah (pangkal ibu jari).</span>
+                        </div>
+                        <div class="clean-card p-3.5">
+                            <strong class="text-white block">4. Sendi Peluru</strong>
+                            <span class="text-neutral-200">Berbagai arah (bahu & panggul).</span>
+                        </div>
+                        <div class="clean-card p-3.5">
+                            <strong class="text-white block">5. Sendi Luncur/Geser</strong>
+                            <span class="text-neutral-200">Menggeser (pergelangan tangan/kaki).</span>
+                        </div>
+                        <div class="clean-card p-3.5">
+                            <strong class="text-white block">6. Sendi Kondiloid</strong>
+                            <span class="text-neutral-200">Samping & maju mundur (pergelangan tangan).</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center pt-2">
+                    <button onclick="triggerNavClick(4)" class="text-xs font-semibold text-neutral-300 hover:text-white"><i class="fa-solid fa-arrow-left mr-1"></i> Sebelumnya</button>
+                    <button onclick="triggerNavClick(6)" class="px-5 py-2.5 rounded-xl bg-white text-[#18191B] text-xs font-bold hover:bg-neutral-200 transition">Lanjut: Kesimpulan <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                </div>
+            </div>
+
+            <!-- =====================================================================
+                 VIEW 7: H. KESIMPULAN & PENUTUP
+            ====================================================================== -->
+            <div id="view-kesimpulan" class="view-panel hidden h-full flex flex-col justify-between gap-5">
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Penutup</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">H. Kesimpulan Pembelajaran</h2>
+                    </div>
+                    <div class="bone-spin-stage w-14 h-14 rounded-2xl bg-white/10 border border-white/25 flex items-center justify-center flex-shrink-0">
+                        <div class="bone-spinner" data-bone-type="skull"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 my-auto">
+                    <div class="clean-card p-4 flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-lg bg-white text-[#18191B] text-xs font-bold flex items-center justify-center flex-shrink-0">1</span>
+                        <p class="text-xs sm:text-sm text-neutral-200">Rangka merupakan <strong class="text-white">alat gerak pasif</strong> yang membantu menopang dan membentuk tubuh.</p>
+                    </div>
+                    <div class="clean-card p-4 flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-lg bg-white text-[#18191B] text-xs font-bold flex items-center justify-center flex-shrink-0">2</span>
+                        <p class="text-xs sm:text-sm text-neutral-200">Rangka manusia terdiri atas <strong class="text-white">rangka aksial</strong> dan <strong class="text-white">rangka apendikular</strong>.</p>
+                    </div>
+                    <div class="clean-card p-4 flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-lg bg-white/15 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">3</span>
+                        <p class="text-xs sm:text-sm text-neutral-200">Berdasarkan jaringannya, tulang dibedakan menjadi <strong class="text-white">tulang rawan</strong> dan <strong class="text-white">tulang keras</strong>.</p>
+                    </div>
+                    <div class="clean-card p-4 flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-lg bg-white/15 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">4</span>
+                        <p class="text-xs sm:text-sm text-neutral-200">Berdasarkan bentuknya, tulang dibagi menjadi <strong class="text-white">pipih, pendek, pipa, dan tak berbentuk</strong>.</p>
+                    </div>
+                    <div class="clean-card p-4 flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-lg bg-white text-[#18191B] text-xs font-bold flex items-center justify-center flex-shrink-0">5</span>
+                        <p class="text-xs sm:text-sm text-neutral-200"><strong class="text-white">Osifikasi</strong> merupakan proses pembentukan dan pengerasan tulang.</p>
+                    </div>
+                    <div class="clean-card p-4 flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-lg bg-white text-[#18191B] text-xs font-bold flex items-center justify-center flex-shrink-0">6</span>
+                        <p class="text-xs sm:text-sm text-neutral-200">Hubungan antartulang terdiri atas <strong class="text-white">sinartrosis, amfiartrosis, dan diartrosis</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl bg-black/40 border border-white/20 text-white p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-lg font-extrabold">Terima Kasih!</h3>
+                        <p class="text-xs text-neutral-300 mt-0.5">Multimedia Biologi: Rangka Manusia — Kelompok Anak Sholeh</p>
+                    </div>
+                    <div class="flex gap-2.5">
+                        <button onclick="openQuizModal()" class="px-4 py-2.5 rounded-xl bg-white text-[#18191B] text-xs font-bold hover:bg-neutral-200 transition">Mulai Kuis</button>
+                        <button onclick="triggerNavClick(0)" class="px-4 py-2.5 rounded-xl bg-white/10 text-white text-xs font-semibold hover:bg-white/20 transition">Ke Beranda</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- INTERACTIVE QUIZ MODAL -->
+    <div id="quizModal" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-[#1F2024] border border-white/25 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative text-white">
+            <button onclick="closeQuizModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="quizContent"></div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
